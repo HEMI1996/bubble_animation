@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.5px solid #fff;
+  padding: 0.4rem 1.5rem;
+  border-radius: 2rem;
+  width: fit-content;
+  height: fit-content;
+  font-size: 0.8rem;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(./img/background.png);
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  overflow: hidden;
+  z-index: 1;
+}
+.hero__main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.5rem 2rem 1rem 5rem;
+}
+.hero__main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__main-nav img {
+  width: 5rem;
+  object-fit: contain;
+}
+
+.hero__main-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.hero__main-info h1 {
+  font-size: 4rem;
+}
+.hero__main-info a {
+  margin-top: 2rem;
+}
+
+.hero__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0.7rem;
+  background-image: linear-gradient(rgb(5, 114, 121), rgb(10, 23, 58));
+}
+.hero__nav img {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+.hero__nav-social {
+  display: flex;
+  flex-direction: column;
+}
+.hero__nav-social img {
+  margin: 0.3rem auto;
+}
+.hero__nav-info {
+  display: flex;
+  flex-direction: column;
+}
+.hero__nav-info img {
+  margin: 0.3rem auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__main {
+    padding: 1.5rem;
+  }
+}
+
+/* Animation Part */
+.hero__animation {
+  position: absolute;
+  z-index: -1;
+}
+
+.hero__animation img:nth-child(1) {
+  position: absolute;
+  height: 2.6rem;
+  width: 2.6rem;
+  left: 10vw;
+  animation: first_bubble 5s linear infinite;
+  top: 100vh;
+  animation-delay: 1s;
+}
+.hero__animation img:nth-child(2) {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  left: 20vw;
+  animation: second_bubble 5s linear infinite;
+  top: 100vh;
+  animation-delay: 4s;
+}
+.hero__animation img:nth-child(3) {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  left: 30vw;
+  animation: third_bubble 5s linear infinite;
+  top: 100vh;
+  animation-delay: 3s;
+}
+.hero__animation img:nth-child(4) {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  left: 40vw;
+  animation: fourth_bubble 5s linear infinite;
+  top: 100vh;
+  animation-delay: 2s;
+}
+.hero__animation img:nth-child(5) {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  left: 50vw;
+  animation: fifth_bubble 5s linear infinite;
+  top: 100vh;
+  animation-delay: 5s;
+}
+.hero__animation img:nth-child(6) {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 60vw;
+  animation: sixth_bubble 5s linear infinite;
+  top: 100vh;
+  animation-delay: 3s;
+}
+.hero__animation img:nth-child(7) {
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  left: 70vw;
+  animation: seventh_bubble 5s linear infinite;
+  top: 100vh;
+  animation-delay: 2s;
+}
+.hero__animation img:nth-child(8) {
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  left: 80vw;
+  animation: eighth_bubble 5s linear infinite;
+  top: 100vh;
+  animation-delay: 4s;
+}
+.hero__animation img:nth-child(9) {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  left: 90vw;
+  animation: ninth_bubble 5s linear infinite;
+  top: 100vh;
+  animation-delay: 1s;
+}
+
+@keyframes first_bubble {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 10vh;
+    opacity: 0;
+  }
+}
+
+@keyframes second_bubble {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0vh;
+    opacity: 0;
+  }
+}
+
+@keyframes third_bubble {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 10vh;
+    opacity: 0;
+  }
+}
+
+@keyframes fourth_bubble {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0vh;
+    opacity: 0;
+  }
+}
+
+@keyframes fifth_bubble {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 10vh;
+    opacity: 0;
+  }
+}
+
+@keyframes sixth_bubble {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0vh;
+    opacity: 0;
+  }
+}
+
+@keyframes seventh_bubble {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 30vh;
+    opacity: 0;
+  }
+}
+
+@keyframes eighth_bubble {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 20vh;
+    opacity: 0;
+  }
+}
+
+@keyframes ninth_bubble {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 10vh;
+    opacity: 0;
+  }
+}
